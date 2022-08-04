@@ -109,6 +109,7 @@ if __name__ == "__main__":
     
     folder = open_folder()
     add_files_to_list(folder)
+    print(f"[+] {len(files_list)} files found in {folder}\n")
     num_choice = input(f"{Fore.YELLOW}[+] What do you want to do?\n[1] Encrypt\n[2] Decrypt\n\n> ")
     try:
         num_choice = int(num_choice)
